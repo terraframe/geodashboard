@@ -24,17 +24,17 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /mydoc_introduction.html
+      url: /index.html
       output: web, pdf
+      type: homepage
 
     - title: About the team behind GeoPrism
       url: /mydoc_about.html
       output: web, pdf
 
     - title: Get started
-      url: /index.html
+      url: /mydoc_getting_started.html
       output: web, pdf
-      type: homepage
 
     # - title: Supported features
     #   url: /mydoc_supported_features.html
@@ -67,7 +67,7 @@ entries:
     - title: Install GeoPrism on Linux
       url: /mydoc_install_geoprism_on_linux.html
       output: web, pdf
-      
+
     - title: Install GeoPrism on Mac
       url: /mydoc_install_geoprism_on_mac.html
       output: web, pdf
