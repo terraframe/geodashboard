@@ -36,6 +36,10 @@ entries:
       url: /mydoc_getting_started.html
       output: web, pdf
 
+    - title: Road Map
+      url: /mydoc_future_roadmap.html
+      output: web, pdf
+
     # - title: Supported features
     #   url: /mydoc_supported_features.html
     #   output: web, pdf
