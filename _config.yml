@@ -3,7 +3,7 @@ repository: terraframe/geoprism
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: GepPrism Documentation
+topnav_title: GeoPrism Documentation
 # this appears on the top navigation bar next to the home button
 
 site_title: GeoPrism documentation
@@ -12,7 +12,7 @@ site_title: GeoPrism documentation
 company_name: TerraFrame
 # this appears in the footer
 
-github_editme_path: terraframe/geoprism/tree/gh-pages
+github_editme_path: terraframe/geoprism/tree/gh-pages/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname:
