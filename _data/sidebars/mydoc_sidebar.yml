@@ -76,6 +76,18 @@ entries:
       url: /mydoc_install_geoprism_on_mac.html
       output: web, pdf
 
+  - title: Contributing
+    output: web,pdf
+    folderitems:
+    
+      - title: Building Geoprism
+        url: /mydoc_building_geoprism.html
+        output: web, pdf
+        
+      - title: Deploying Geoprism
+        url: /mydoc_deploying_geoprism.html
+        output: web, pdf  
+
 #   - title: Authoring
 #     output: web, pdf
 #
