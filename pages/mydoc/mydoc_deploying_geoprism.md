@@ -9,6 +9,8 @@ permalink: mydoc_deploying_geoprism.html
 folder: mydoc
 ---
 
+TerraFrame uses Ansible scripts to deploy our platform. This allows us to automate all of the tedious tasks like installing Tomcat, Postgres, etc, and allows us to deploy production servers in predicable ways. Our Ansible scripts are open-source and can be found on our [geoprism-cloud](https://github.com/terraframe/geoprism-cloud) github repository.
+
 Official releases of Geoprism are deployed by the TerraFrame team to our online Nexus repository (<http://nexus.terraframe.com>). You will need to obtain credentials to push to this Nexus server, however the public does have read-only access. By default our ansible scripts are set to use 'LATEST' (which is a Maven version keyword). When LATEST is sent to our nexus server, the server will send you the latest official release of Geoprism. We recommend, however, that you put a real version number so that you can keep track of what your current Geoprism version is, should there be any issues or incompatibilities with the latest Geoprism version.
 
 If you want to do a Geoprism release from a local build you will have to modify the Ansible scripts yourself as this is not currently supported out-of-the box.
