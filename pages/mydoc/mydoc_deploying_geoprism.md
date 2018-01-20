@@ -45,12 +45,13 @@ These appcfg configuration files will override the default properties files that
 # Deploying with Ansible
 Here is how to deploy an existing Geoprism release to AWS using Ansible.
 
-1. Make sure that ports 5432 and 22 are properly forwarded from the Ansible deployment machine to your remote production cloud server.
-2. Check your inventory file. Make sure the settings are correct (don't want to wipe the production database now do we?).
-3. On that note, back up your server.
-4. Make sure your inventory file's permissions path points to the correct .pem key. Otherwise the SSH won't connect.
-5. Set your appcfg_dir to point to the root of your appcfg directory.
-6. Here's what a deployment command looks like: `ansible-playbook -i /path/to/inventory/files/dev.ini demo.yml`. Execute this command from the geoprism-cloud/ansible directory on your deployment machine (not the server itself). 
+1. Clone the geoprism-cloud git repository.
+2. Make sure that ports 5432 and 22 are properly forwarded from the Ansible deployment machine to your remote production cloud server.
+3. Check your inventory file. Make sure the settings are correct (don't want to wipe the production database now do we?).
+4. On that note, back up your server.
+5. Make sure your inventory file's permissions path points to the correct .pem key. Otherwise the SSH won't connect.
+6. Set your appcfg_dir to point to the root of your appcfg directory.
+7. Here's what a deployment command looks like: `ansible-playbook -i /path/to/inventory/files/dev.ini demo.yml`. Execute this command from the geoprism-cloud/ansible directory on your deployment machine (not the server itself). 
 
 NOTE:
 I was having issues using the latest ansible deployment so I cloned `a236cbf3b42fa2c51b89e9395b47abe286775829` and then ran `source ansible-dev/ansible/hacking/env-setup`. This will get around psycop2g errors.
