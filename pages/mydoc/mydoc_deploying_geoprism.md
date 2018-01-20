@@ -48,4 +48,7 @@ Here is how to deploy an existing Geoprism release to AWS using Ansible.
 5. Set your appcfg_dir to point to the root of your appcfg directory.
 6. Here's what a deployment command looks like: `ansible-playbook -i /path/to/inventory/files/dev.ini demo.yml`. Execute this command from the geoprism-cloud/ansible directory on your deployment machine (not the server itself). 
 
+NOTE:
+I was having issues using the latest ansible deployment so I cloned `a236cbf3b42fa2c51b89e9395b47abe286775829` and then ran `source ansible-dev/ansible/hacking/env-setup`. This will get around psycop2g errors.
+
 {% include links.html %}
