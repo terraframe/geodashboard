@@ -80,9 +80,9 @@ entries:
     output: web,pdf
     folderitems:
     
-      - title: Building Geoprism
-        url: /mydoc_building_geoprism.html
-        output: web, pdf
+      #- title: Building Geoprism
+      #  url: /mydoc_building_geoprism.html
+      #  output: web, pdf
         
       - title: Deploying Geoprism
         url: /mydoc_deploying_geoprism.html

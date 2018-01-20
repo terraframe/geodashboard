@@ -15,6 +15,10 @@ Official releases of Geoprism are deployed by the TerraFrame team to our online 
 
 If you want to do a Geoprism release from a local build you will have to modify the Ansible scripts yourself as this is not currently supported out-of-the box.
 
+# Hardware Requirements
+
+We recommend using an r4.large server as Geoprism applications tend to be memory intensive. We are using io1 800 IOPS 100GB hard drives. If you decide to use different hardware make sure to tweak the settings in your inventory file to account for the different hardware.
+
 # Our Docker Containers
 
 Our docker containers are pulled from our AWS ECS server. These containers automate for us all of the manual installation of Postgres, Tomcat, Ubuntu, etc. They also come pre-bundled with our SSL certificates. There is a public and a private flavour of our docker containers, the public contains a self-signed SSL certificate (which will display an SSL error when connecting, because its self-signed), and the private container comes with our private SSL geoprism.net wildcard certificate. The private docker container is only for usage on our Geoprism SAS® offering.
