@@ -10,13 +10,18 @@ summary: GeoPrism is an integrated platform for data management and visualizatio
 ## General Software Requirements
 
 * Java 8 (Oracle jre recommended)
-* Tomcat 8
-* GeoServer 2.5 +
 * PostgreSQL 9.0 +
 * PostGIS 2.0 +
-* [Runway-SDK](https://github.com/terraframe/Runway-SDK.git)
-* [Runway-SDK-GIS](https://github.com/terraframe/Runway-SDK-GIS.git)
 * [GeoPrism](https://github.com/terraframe/geoprism.git)
 
+## Development Environment Recommendations
+
+* Eclipse IDE for Java EE developers. You may not be able to use the latest version of Eclipse because there may not be AspectJ support yet. Check the [Eclipse AJDT website](https://www.eclipse.org/ajdt/) first to find out what version of Eclipse you want to download.
+* AspectJ Development Tools Eclipse plugin (Must be the correct version for your Eclipse. For example with Eclipse Neon, use version 2.2.4).
+* These should come standard with Eclipse: Maven, m2e
+
+## What about Tomcat and Geoserver?
+
+Tomcat and Geoserver will automatically be installed as part of our automated Maven tasks.
 
 {% include links.html %}
