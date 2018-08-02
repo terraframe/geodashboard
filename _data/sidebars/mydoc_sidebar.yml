@@ -48,13 +48,13 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
-
-    - title: Release notes
-      url: /mydoc_release_notes.html
-      output: web, pdf
+  # - title: Release Notes
+  #   output: web, pdf
+  #   folderitems:
+  #
+  #   - title: Release notes
+  #     url: /mydoc_release_notes.html
+  #     output: web, pdf
 
     # - title: 5.0 Release notes
     #   url: /mydoc_release_notes_50.html

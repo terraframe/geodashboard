@@ -1,9 +1,9 @@
 ---
-title: About the theme author
+title: The Team Behind GeoPrism
 keywords: documentation theme, jekyll, technical writers, help authoring tools, hat replacements
 last_updated: July 3, 2016
 tags: [getting_started]
-summary: "I have used this theme for projects that I've worked on as a professional technical writer."
+summary: "GeoPrism is an Open Source project by TerraFrame"
 sidebar: mydoc_sidebar
 permalink: mydoc_about.html
 folder: mydoc
