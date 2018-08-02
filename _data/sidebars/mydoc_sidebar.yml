@@ -20,78 +20,94 @@ entries:
       type: frontmatter
 
   - title: Overview
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: Introduction
       url: /index.html
-      output: web, pdf
+      output: web
       type: homepage
 
     - title: About the team behind GeoPrism
       url: /mydoc_about.html
-      output: web, pdf
+      output: web
 
     - title: Get started
       url: /mydoc_getting_started.html
-      output: web, pdf
+      output: web
 
     - title: Road Map
       url: /mydoc_future_roadmap.html
-      output: web, pdf
+      output: web
 
     # - title: Supported features
     #   url: /mydoc_supported_features.html
-    #   output: web, pdf
+    #   output: web
 
     - title: Support
       url: /mydoc_support.html
-      output: web, pdf
+      output: web
 
   # - title: Release Notes
-  #   output: web, pdf
+  #   output: web
   #   folderitems:
   #
   #   - title: Release notes
   #     url: /mydoc_release_notes.html
-  #     output: web, pdf
+  #     output: web
 
     # - title: 5.0 Release notes
     #   url: /mydoc_release_notes_50.html
-    #   output: web, pdf
+    #   output: web
 
   - title: Installation
-    output: web, pdf
+    output: web
     folderitems:
 
     # - title: About Ruby, Gems, Bundler, etc.
     #   url: /mydoc_about_ruby_gems_etc.html
-    #   output: web, pdf
+    #   output: web
 
     - title: Install GeoPrism on Linux
       url: /mydoc_install_geoprism_on_linux.html
-      output: web, pdf
+      output: web
 
     - title: Install GeoPrism on Mac
       url: /mydoc_install_geoprism_on_mac.html
-      output: web, pdf
+      output: web
 
   - title: Contributing
-    output: web,pdf
+    output: web
     folderitems:
 
       #- title: Building Geoprism
       #  url: /mydoc_building_geoprism.html
-      #  output: web, pdf
+      #  output: web
 
     - title: Deploying Geoprism
       url: /mydoc_deploying_geoprism.html
-      output: web, pdf
+      output: web
 
   - title: Data Integration
-    output: web,pdf
+    output: web
     folderitems:
 
     - title: Spreadsheet Formatting
       url: /mydoc_formatting_spreadsheets.html
-      output: web, pdf
+      output: web
+
+    - title: Spreadsheet Uploading
+      url: /mydoc_uploading_spreadsheets.html
+      output: web
+
+  - title: FAQ
+    output: web
+    folderitems:
+
+    - title: User FAQ
+      url: /mydoc_user_faq.html
+      output: web
+      
+    - title: Developer FAQ
+      url: /mydoc_developer_faq.html
+      output: web
