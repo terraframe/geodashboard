@@ -53,17 +53,14 @@ As you can see there are many variations for a single location and this example 
 
 There are two main challenges we are trying to solve when formatting text based locations in your spreadsheet:
 
-1.  Matching variations in location names with locations in the system location hierarchy.
-2.  Ensuring that a location name is unique within the locations you are trying to match against in the system location hierarchy.
-
-### 1. Handling variations in location names
+## 1. Handling variations in location names
 GeoPrism has functionality that allows synonyms to be registered with a location in the hierarchy. This is very useful because it allows you to add all of the variations of a location name with the location in the hierarchy so that data coming into the system can match against a location with different semantic representations. However, whether the location hierarchy has the name that your data uses depends entirely on the hierarchy so your data may not match immediately. To prevent the need for registering new synonyms for a location in a later step of the upload it can be easier to format your spreadsheet to a naming convention that you know they hierarchy uses.
 
 For example: If you know Counties are named with the base name only (i.e. Denver) and your data names locations with additional terminology (i.e. Denver County) it can be useful to remove "County" from the location names before importing.
 
 It's important to realize that this isn't a requirement but can help depending on the situation. If your data has a way of naming locations which no location in the system has a synonym for you will have to manually register the new synonym with the corresponding location later in the upload. This is relatively easy but can be time consuming if you're dealing with a lot of locations.
 
-### 2. Ensuring a unique location name for the locations you are uploading to
+## 2. Ensuring a unique location name for the locations you are uploading to
 When uploading data with locations you must specify the level in the hierarchy that the locations represent (i.e. city, county, state, etc...). It's important to consider whether there are duplicate names across those locations you are matching against or the uploader will require you to resolve duplicate name name matches in a late step. It can be easier to format your spreadsheet to avoid this situation by adding one or more context location columns. By "context columns" I mean a set of columns that contain location names representing their place in the location hierarchy.
 
 For example: A spreadsheet to be matched against Counties that has a single location name field of "Denver Colorado" could be split into two columns. One column would be "Denver" and the other would be "Colorado".
@@ -76,15 +73,12 @@ ID based locations can be handled in a very similar way as semantic based locati
 
 The same two primary challenges described for semantic based locations apply to ID location:
 
-1.  Matching variations in IDs with locations in the system location hierarchy.
-2.  Ensuring that an ID is unique within the locations you are trying to match against in the system location hierarchy.
-
-### 1. Handling variations in location IDs
+## 1. Handling variations in location IDs
 For the U.S.A Census there are many variations used for location IDs depending on the type of location you are working with. Just like for semantic location names it can be useful to format location ID fields in a way that the system location hierarchy is already using in order to prevent the need for you to register new synonyms late in the upload process.
 
 For example: If you know the system location hierarchy has County IDs registered as the only base County ID without the pre-pended State ID change your data to match that. An ID for Denver County can be changed from 08031 where "08" represents the state and "031" represents the county to simply "031".
 
-### 2. Ensuring a unique ID for the locations you are uploading to
+## 2. Ensuring a unique ID for the locations you are uploading to
 Just like how semantic location names can benefit from context columns so can ID based locations. In the last example we described how U.S.A. Census County ID can be split apart to better match existing IDs in the system location hierarchy. To create context columns from this same ID you can create a new column for States so that you end up with "08" in the State column and "031" in the County column.
 
 
@@ -94,7 +88,7 @@ Coordinate locations are a latitude and longitude pair that represent a point on
 # Enhancing Semantic Or ID Based Locations With Coordinate Locations
 If you expect your data might have troubles matching to unique locations because your data doesn't have context columns you can take advantage of a location matching algorithm by adding coordinate locations to your data. If you don't already have coordinate locations that fall within the locations you want to match against then you will have to generate them in an external tool (GIS, PostGIS, etc...).
 
-For this approach you must configure your spreadsheet in the attributes configuration page to have location fields and coordinate locations (latitude and longitude). When configuring the location fields in the next step of the upload process you will be given an option to "Enhance location matches for ambiguous location names with coordinates from your data". This will use geometric analysis to calculate if the coordinate in your spreadsheet falls within one of the locations in the level of the hierarchy specified for your other location fields WHEN the matching process finds more than one location in the system location hierarchy matching your data. 
+For this approach you must configure your spreadsheet in the attributes configuration page to have location fields and coordinate locations (latitude and longitude). When configuring the location fields in the next step of the upload process you will be given an option to "Enhance location matches for ambiguous location names with coordinates from your data". This will use geometric analysis to calculate if the coordinate in your spreadsheet falls within one of the locations in the level of the hierarchy specified for your other location fields WHEN the matching process finds more than one location in the system location hierarchy matching your data.
 
 
 {% include links.html %}
