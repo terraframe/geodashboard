@@ -9,6 +9,13 @@ folder: mydoc
 
 {% include tip.html content="For more reliable compatibility use Eclipse IDE (Luna)." %}
 
+## Download Eclipse
+Be sure to download a version of Eclipse that is compatible with AJDT and specifies it's for Jave EE developers.
+
+The AJDT download link will show you what versions of Eclipse are compatible with AJDT: https://www.eclipse.org/ajdt/downloads/index.php
+
+For a tested version of Eclipse Photon download from here: https://www.eclipse.org/downloads/packages/release/photon/r
+
 ## Configure Eclipse
 
 ### Install EGit
